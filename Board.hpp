@@ -7,15 +7,16 @@
  * @author Erel Segal-Halevi
  * @since  2020-05
  */
-
+#ifndef Soldier_s
+#define Soldier_s
 #include <string>
 #include <vector>
 #include <stdexcept>
 #include "Soldier.hpp"
 
+//using namespace Soldiers;
 
 namespace WarGame {
-
 class Board {
   private:
     std::vector<std::vector<Soldier*>> board;
@@ -49,3 +50,4 @@ class Board {
 };
 
 }
+#endif
