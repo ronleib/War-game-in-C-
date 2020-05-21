@@ -1,41 +1,42 @@
 
 
 #include "Soldier.hpp"
-
+#include "Board.hpp"
+using namespace WarGame;
 //// move functins
-FootSoldier::void move( MoveDIR dir ){
+void Soldiers::FootSoldier::move( WarGame::Board::MoveDIR dir ){
 
 }
 
-FootCommander::void move( MoveDIR dir ){
+Soldiers::FootCommander::void move( MoveDIR dir ){
 
 }
 
-Sniper::void move( MoveDIR dir ){
+Soldiers::Sniper::void move( MoveDIR dir ){
 
 }
 
-SniperCommander::void move( MoveDIR dir ){
+Soldiers::SniperCommander::void move( MoveDIR dir ){
 
 }
 
-Paramedic::void move( MoveDIR dir ){
+Soldiers::Paramedic::void move( MoveDIR dir ){
 
 }
 
-ParamedicCommander::void move( MoveDIR dir ){
+Soldiers::ParamedicCommander::void move( MoveDIR dir ){
 
 }
 
 //// spetialAbility functins
-FootCommander::void spetialAbility(){
+Soldiers::FootCommander::void spetialAbility(){
 
 }
 
-SniperCommander::void spetialAbility(){
+Soldiers::SniperCommander::void spetialAbility(){
 
 }
 
-ParamedicCommander::void spetialAbility(){
+Soldiers::ParamedicCommander::void spetialAbility(){
 
 }

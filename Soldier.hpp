@@ -1,8 +1,12 @@
-//#ifndef Soldier_s
-//#define Soldier_s
-//#include "Board.hpp"
+
+#include <iostream>
+#ifndef B_H
+#define B_H
+#include "Board.hpp"
+#endif
+using namespace WarGame;
 using namespace std;
-//using namespace WarGame;
+#pragma once
 namespace Soldiers {
 	
 	class Human {
@@ -17,8 +21,8 @@ namespace Soldiers {
 
     class Soldier {
     public:
-        std::pair<int, int> location;
-        virtual void move(std::pair<int,int> dir);
+        pair<int, int> location;
+        virtual void move(WarGame::Board::MoveDIR dir);
     };
 	 
 	class Shooter : public Human, public Soldier {
@@ -36,7 +40,7 @@ namespace Soldiers {
 	public:
         FootSoldier(int x) : Shooter(x) {}
 
-        void move(std::pair<int,int> dir);
+        void move(MoveDIR dir);
     };
 
     class FootCommander : public FootSoldier, public Commander {
@@ -54,7 +58,7 @@ namespace Soldiers {
 			damage = 50;
         }
 
-        void move(std::pair<int,int> dir);
+        void move(MoveDIR dir);
     };
 
     class SniperCommander : public Sniper, public Commander {
@@ -67,11 +71,11 @@ namespace Soldiers {
         void spetialAbility();
     };
 	
-    class Paramedic : public Human {
+    class Paramedic : public Soldier, public Human {
 	public:
         Paramedic (int x) : Human(x) {}
 		
-        void move(std::pair<int,int> dir);
+        void move(MoveDIR dir);
     };
 	
     class ParamedicCommander : public Paramedic, public Commander {

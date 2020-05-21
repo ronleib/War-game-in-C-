@@ -1,6 +1,6 @@
 
 #include "Board.hpp"
-
+using namespace WarGame;
 Soldier*& Board::operator[](std::pair<int,int> location){
 	
 }
