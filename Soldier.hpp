@@ -15,7 +15,6 @@ namespace Soldiers {
 		{}
     };
 
-
     class Soldier {
     public:
         std::pair<int, int> location;
@@ -68,7 +67,7 @@ namespace Soldiers {
         void spetialAbility();
     };
 	
-    class Paramedic : public Soldier {
+    class Paramedic : public Human {
 	public:
         Paramedic (int x) : Human(x) {}
 		
