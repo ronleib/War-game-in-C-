@@ -16,13 +16,13 @@ namespace Soldiers {
     };
 
 
-    class Soldier : public Human {
+    class Soldier {
     public:
         std::pair<int, int> location;
         virtual void move(std::pair<int,int> dir);
     };
 	 
-	class Shooter : public Soldier {
+	class Shooter : public Human, public Soldier {
     public:
         int damage;
 		Shooter(int x) : Human(x), damage(10) {}
