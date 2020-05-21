@@ -4,44 +4,83 @@
 using namespace std;
 //using namespace WarGame;
 namespace Soldiers {
+	
+	class Human {
+    public:
+        int player;
+		int health;
+		
+		Human(int p)
+			: player(p), health(100)
+		{}
+    };
 
-     class Soldier {
-     private:
-         uint8_t helth;
-         uint8_t demage;
-     public:
-         //enum SoldierType {};
-         std::pair<int, int> location;
 
-         virtual void move(std::pair<int,int> dir);
-     };
+    class Soldier : public Human {
+    public:
+        std::pair<int, int> location;
+        virtual void move(std::pair<int,int> dir);
+    };
+	 
+	class Shooter : public Soldier {
+    public:
+        int damage;
+		Shooter(int x) : Human(x), damage(10) {}
+		void shoot();
+    };
 
-     class Commander {
-         virtual void spetialAbility();
-     };
+    class Commander {
+        virtual void spetialAbility();
+    };
 
-     class FootSoldier : public Soldier {
-         void move(std::pair<int,int> dir);
-     };
+    class FootSoldier : public Shooter {
+	public:
+        FootSoldier(int x) : Shooter(x) {}
 
-     class FootCommander : public FootSoldier, public Commander {
-         void spetialAbility();
-     };
+        void move(std::pair<int,int> dir);
+    };
 
-     class Sniper : public Soldier {
-         void move(std::pair<int,int> dir);
-     };
+    class FootCommander : public FootSoldier, public Commander {
+	public:
+		FootCommander(int x) : FootSoldier(x){
+            health = 150;
+        }
 
-     class SniperCommander : public Sniper, public Commander {
-         void spetialAbility();
-     };
+        void spetialAbility();
+    };
 
-     class Paramedic : public Soldier {
-         void move(std::pair<int,int> dir);
-     };
+    class Sniper : public Shooter {
+	public:
+        Sniper (int x) : Shooter(x) {  
+			damage = 50;
+        }
 
-     class ParamedicCommander : public Paramedic, public Commander {
-         void spetialAbility();
-     };
+        void move(std::pair<int,int> dir);
+    };
+
+    class SniperCommander : public Sniper, public Commander {
+	public:
+        SniperCommander (int x) : Sniper(x){
+            health = 120;
+            damage = 100;
+        }
+
+        void spetialAbility();
+    };
+	
+    class Paramedic : public Soldier {
+	public:
+        Paramedic (int x) : Human(x) {}
+		
+        void move(std::pair<int,int> dir);
+    };
+	
+    class ParamedicCommander : public Paramedic, public Commander {
+	public:
+        ParamedicCommander (int x) : Paramedic (x) {
+           health = 200;
+		}
+        void spetialAbility();
+    };
  }
 //#endif
