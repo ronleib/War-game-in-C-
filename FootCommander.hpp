@@ -6,7 +6,7 @@ public:
 		health = 150;
 		damage = 20;
 	}
-	~FootCommander{
+	~FootCommander(){
 		delete FootSoldier;
 	}
 	void spetialAbility();
