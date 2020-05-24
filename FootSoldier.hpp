@@ -7,7 +7,5 @@ public:
 		int health = 100;
 		int damage = 10;
 	}
-	
-    void move(WarGame::Board::MoveDIR dir);
 	void shoot();
 };
