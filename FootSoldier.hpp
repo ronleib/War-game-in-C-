@@ -1,4 +1,4 @@
-
+#includes "Soldier.hpp"
 
 class FootSoldier : public Shooter {
 public:

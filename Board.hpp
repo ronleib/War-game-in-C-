@@ -7,13 +7,10 @@
  * @author Erel Segal-Halevi
  * @since  2020-05
  */
-#ifndef B_H
-#define B_H
 #include <string>
 #include <vector>
 #include <stdexcept>
 #include "Soldier.hpp"
-#endif
 
 using namespace Soldiers;
 
