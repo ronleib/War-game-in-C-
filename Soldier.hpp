@@ -5,7 +5,6 @@
 #include "Board.hpp"
 using namespace WarGame;
 #endif
-
 using namespace std;
 #pragma once
 namespace Soldiers {
