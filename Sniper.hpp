@@ -1,3 +1,4 @@
+#include "Soldier.hpp"
 class Sniper : public Shooter {
 public:
 	Sniper(uint x){
@@ -5,7 +6,6 @@ public:
 		int health = 100;
 		int damage = 50;
 	}
-	
-    void move(WarGame::Board::MoveDIR dir);
+
 	void shoot();
 };

@@ -1,3 +1,5 @@
+#include "Paramedic.hpp"
+
 class ParamedicCommander : public Paramedic {
 public:
 	Sniper(uint x){
@@ -6,6 +8,6 @@ public:
 	
 	}
 	
-	void heal();
-
+void heal();
+void spetialAbility();
 };
