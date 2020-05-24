@@ -1,4 +1,4 @@
-#include "Sniper.hpp"
+//#include "Sniper.hpp"
 class SniperCommander : public Sniper {
 public:
 	Sniper(uint x){
