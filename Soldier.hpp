@@ -3,8 +3,8 @@
 #ifndef B_H
 #define B_H
 #include "Board.hpp"
-using namespace WarGame;
 #endif
+using namespace WarGame;
 using namespace std;
 #pragma once
 namespace Soldiers {
