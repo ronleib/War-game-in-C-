@@ -3,7 +3,7 @@
 #include "FootSoldier.hpp"
 using namespace WarGame;
 Soldier*& Board::operator[](std::pair<int,int> location){
-	return &(new FootSoldier(1));
+	return new FootSoldier(1);
 }
  
 Soldier* Board::operator[](std::pair<int,int> location) const {
