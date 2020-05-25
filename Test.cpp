@@ -39,6 +39,7 @@ TEST_CASE(" first ") {
 	CHECK(!board.has_soldiers(1));
 	
 	board.clear();
+	int i = 0, j =  0;
 	for(;i<8;i++){
 		for(;j<8;j++){
 			CHECK(board[{i,j}] == nullptr);
@@ -80,6 +81,7 @@ TEST_CASE(" second ") {
 	CHECK(!board.has_soldiers(1));
 	
 	board.clear();
+	int i = 0, j =  0;
 	for(;i<8;i++){
 		for(;j<8;j++){
 			CHECK(board[{i,j}] == nullptr);
