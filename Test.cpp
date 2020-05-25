@@ -98,7 +98,7 @@ TEST_CASE(" second ") {
 	
 	board[{7,1}] = new FootSoldier(2);
     
-	board.move(1, {0,3}, Board::MoveDIR::Left);   
+	board.move(1, {0,3}, Board::MoveDIR::Up);   
 	CHECK(board.has_soldiers(2));
 	
 }
