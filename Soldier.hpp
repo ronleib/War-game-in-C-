@@ -9,7 +9,7 @@ namespace Soldiers {
     public:
 		int player;
 		int health;
-        pair<int, int> location;
+        std::pair<int, int> location;
     };
 
 	class Shooter : public Soldier {
