@@ -21,7 +21,6 @@ void Board::clear(){
 	for(;i<cols;i++){
 		for(;j<rows;j++){
 			if(this->board[i][j] != nullptr){
-				delete *this->board[i][j];
 				this->board[i][j] = nullptr;
 			}
 		}
