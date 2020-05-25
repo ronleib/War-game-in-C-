@@ -2,7 +2,7 @@
 
 class FootSoldier : public Shooter {
 public:
-	FootSoldier(uint x){
+	FootSoldier(int x){
 		player = x;
 		int health = 100;
 		int damage = 10;
