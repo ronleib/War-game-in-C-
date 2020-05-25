@@ -1,4 +1,5 @@
 #include "doctest.h"
+#include "Board.hpp"
 #include "FootSoldier.hpp"
 #include "FootCommander.hpp"
 #include "Paramedic.hpp"
