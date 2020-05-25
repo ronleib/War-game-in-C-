@@ -1,10 +1,14 @@
 //#include "Sniper.hpp"
 class SniperCommander : public Sniper {
 public:
-	Sniper(uint x){
+	int player;
+	int health;
+    int damage;
+	pair<int, int> location;
+	Sniper(int x){
 		player = x;
-		int health = 120;
-		int damage = 100;
+		health = 120;
+		damage = 100;
 	}
 
 	void spetialAbility();

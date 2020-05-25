@@ -1,6 +1,9 @@
 class Paramedic : public Soldier {
 public:
-	Paramedic(uint x){
+	int player;
+	int health;
+	pair<int, int> location;
+	Paramedic(int x){
 		player = x;
 		int health = 100;
 	

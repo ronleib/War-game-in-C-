@@ -2,10 +2,14 @@
 
 class FootSoldier : public Shooter {
 public:
+	int player;
+	int health;
+    int damage;
+	pair<int, int> location;
 	FootSoldier(int x){
 		player = x;
-		int health = 100;
-		int damage = 10;
+		health = 100;
+		damage = 10;
 	}
 	void shoot();
 };
