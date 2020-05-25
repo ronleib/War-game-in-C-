@@ -7,6 +7,8 @@
 #include "Sniper.hpp"
 #include "SniperCommander.hpp"
 
+using namespace WarGame;
+
 TEST_CASE(" first ") {
 	Board board(8,8);
 	board[{0,1}] = new Paramedic(1);
