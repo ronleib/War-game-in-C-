@@ -2,11 +2,11 @@
 #include "Board.hpp"
 using namespace WarGame;
 Soldier*& Board::operator[](std::pair<int,int> location){
-//return Board::board[location][location];
+	return this.board[0][0];
 }
  
 Soldier* Board::operator[](std::pair<int,int> location) const {
-
+	return this.board[0][0];
 }
 
 void Board::move(uint player_number, std::pair<int,int> source, MoveDIR direction){
