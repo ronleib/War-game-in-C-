@@ -1,5 +1,6 @@
 
 #include "Board.hpp"
+#include "FootSoldier.hpp"
 using namespace WarGame;
 Soldier*& Board::operator[](std::pair<int,int> location){
 	return new FootSoldier(1);
