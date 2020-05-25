@@ -1,9 +1,8 @@
 
 #include <iostream>
 using namespace std;
-#ifndef SOLDIER_H
-#define SOLDIER_H
-namespace Soldiers {
+
+//namespace Soldiers {
 	
     class Soldier {
     public:
@@ -15,13 +14,12 @@ namespace Soldiers {
 	class Shooter : public Soldier {
     public:
         int damage;
-		 void shoot();
+		virtual void shoot();
     };
-//    class Commander : public Shooter {
-//    public:
-//
-//        virtual void spetialAbility();
-//    };
-}
+//class Commanders : public Soldier {
+//public:
+//    void spetialAbility();
+//};
+//}
 //#pragma once
-#endif
+//#endif
