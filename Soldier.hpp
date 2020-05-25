@@ -15,7 +15,7 @@ namespace Soldiers {
 	class Shooter : public Soldier {
     public:
         int damage;
-		 void shoot();
+		void shoot();
     };
 //    class Commander : public Shooter {
 //    public:

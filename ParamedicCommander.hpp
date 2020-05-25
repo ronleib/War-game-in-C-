@@ -2,15 +2,12 @@
 
 class ParamedicCommander : public Paramedic {
 public:
-	int player;
-	int health;
-	pair<int, int> location;
-	Sniper(int x){
-		player = x;
-		int health = 200;
-	
+	//int player;
+	//int health;
+	//pair<int, int> location;
+	ParamedicCommander(int x): Paramedic(x){
+		health = 200;
 	}
 	
-void heal();
-void spetialAbility();
+	void spetialAbility();
 };
