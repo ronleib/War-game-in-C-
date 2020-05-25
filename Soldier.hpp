@@ -7,7 +7,7 @@ namespace Soldiers {
 	
     class Soldier {
     public:
-		uint player;
+		int player;
 		int health;
         pair<int, int> location;
     };
