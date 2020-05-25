@@ -16,6 +16,18 @@ void Board::move(uint player_number, std::pair<int,int> source, MoveDIR directio
 
 }
 
+void Board::clear(){
+	int i=0, j=0;
+	for(;i<cols;i++){
+		for(;j<rows;j++){
+			if(this.board[{i,j}] != nullptr){
+				delete *this.board[{i,j}];
+				this.board[{i,j}] = nullptr;
+			}
+		}
+	}
+}
+
 bool Board::has_soldiers(uint player_number) const {
 	return true;
 }
