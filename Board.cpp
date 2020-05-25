@@ -3,11 +3,13 @@
 #include "FootSoldier.hpp"
 using namespace WarGame;
 Soldier*& Board::operator[](std::pair<int,int> location){
-	return new FootSoldier(1);
+	Soldier* bob = new FootSoldier(1);
+	return bob;
 }
  
 Soldier* Board::operator[](std::pair<int,int> location) const {
-	return new FootSoldier(1);
+	Soldier* bob = new FootSoldier(1);
+	return bob;
 }
 
 void Board::move(uint player_number, std::pair<int,int> source, MoveDIR direction){
