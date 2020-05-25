@@ -42,9 +42,8 @@ TEST_CASE(" first ") {
 	CHECK(!board.has_soldiers(1));
 	
 	board.clear();
-	int i = 0, j =  0;
-	for(;i<8;i++){
-		for(;j<8;j++){
+	for(int i = 0;i<8;i++){
+		for(int j =  0;j<8;j++){
 			CHECK(board[{i,j}] == nullptr);
 		}
 	}
@@ -84,16 +83,15 @@ TEST_CASE(" second ") {
 	CHECK(!board.has_soldiers(1));
 	
 	board.clear();
-	int i = 0, j =  0;
-	for(;i<8;i++){
-		for(;j<8;j++){
+	for(int i = 0;i<8;i++){
+		for(int j =  0;j<8;j++){
 			CHECK(board[{i,j}] == nullptr);
 		}
 	}
 }
 
 
-TEST_CASE(" second ") {
+TEST_CASE(" third ") {
 	Board board(8,8);
 	board[{0,1}] = new Sniper(1);
 	board[{0,2}] = new Sniper(1);
