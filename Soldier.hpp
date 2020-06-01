@@ -9,12 +9,13 @@ namespace Soldiers {
     public:
 		int player;
 		int health;
+        int damage;
         std::pair<int, int> location;
     };
 
 	class Shooter : public Soldier {
     public:
-        int damage;
+//        int damage;
 		void shoot();
     };
 //    class Commander : public Shooter {
