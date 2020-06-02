@@ -19,18 +19,18 @@ class Board {
   private:
   int cols, rows;
     std::vector<std::vector<Soldier*>> board;
-    std::vector<std::vector<Soldier*> P1;//[0]=FootSoldier
-    std::vector<std::vector<Soldier*> P2;
+//    std::vector<std::vector<Soldier*> P1;//[0]=FootSoldier
+//    std::vector<std::vector<Soldier*> P2;
 
     public:
     enum MoveDIR { Up, Down, Right, Left };
 
     Board(uint numRows, uint numCols) : 
       board(numRows, std::vector<Soldier*>(numCols, nullptr)) {
-        for (int i = 0; i <= 6; i++) {
-            P1.push_back(std::vector <Soldier*> );
-                P2.push_back(std::vector<Soldier*>);
-    }
+//        for (int i = 0; i <= 6; i++) {
+//            P1.push_back(std::vector <Soldier*> );
+//                P2.push_back(std::vector<Soldier*>);
+//    }
     }
 
     // operator for putting soldiers on the game-board during initialization.
