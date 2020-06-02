@@ -11,12 +11,15 @@ namespace Soldiers {
 		int health;
         int damage;
         std::pair<int, int> location;
+
+        virtual void abillity();
+
     };
 
 	class Shooter : public Soldier {
     public:
 //        int damage;
-		void shoot();
+		virtual void shoot();
     };
 //    class Commander : public Shooter {
 //    public:
